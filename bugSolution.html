@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    const element = document.getElementById("myDiv");
+    if (element) {
+      element.innerHTML = "This text has been updated.";
+    } else {
+      console.error("Element with ID 'myDiv' not found.");
+    }
+    //Further, safer way to handle the situation
+    const anotherElement = document.getElementById("nonExistentElement");
+    anotherElement?.innerHTML = "This will not cause an error.";
+  </script>
+</body>
+</html>
