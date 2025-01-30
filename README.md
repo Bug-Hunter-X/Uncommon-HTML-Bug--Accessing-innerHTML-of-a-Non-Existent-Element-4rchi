@@ -1,0 +1,1 @@
+This repository demonstrates a common yet easily overlooked error in HTML and JavaScript: attempting to access the innerHTML property of an element that does not exist in the DOM.  The bug.html file contains the erroneous code.  The bugSolution.html file provides a corrected version that uses error handling to prevent the runtime error.
